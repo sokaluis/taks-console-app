@@ -1,0 +1,22 @@
+{
+  "name": "task-console-app",
+  "version": "0.0.1",
+  "description": "Small CRUD App on console",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sokaluis/task-console-app.git"
+  },
+  "author": "Luis Azocar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sokaluis/task-console-app/issues"
+  },
+  "homepage": "https://github.com/sokaluis/task-console-app#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
