@@ -8,11 +8,11 @@ const showMenu = () => {
     console.log("=====================================\n".green);
 
     console.log(`${"1".green}. Create Task`);
-    console.log(`${"2".green}. Show Tasks`);
-    console.log(`${"3".green}. Show Completed Tasks`);
-    console.log(`${"4".green}. Show Pending Tasks`);
-    console.log(`${"5".green}. Complete Task(s)`);
-    console.log(`${"6".green}. Delete Task`);
+    console.log(`${"2".green}. `);
+    console.log(`${"3".green}. `);
+    console.log(`${"4".green}. `);
+    console.log(`${"5".green}. `);
+    console.log(`${"6".green}. Complete Task(s)`);
     console.log(`${"0".green}. Exit\n`);
 
     const readline = require("readline").createInterface({
