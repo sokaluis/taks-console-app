@@ -19,6 +19,13 @@ class Tasks {
     return listado;
   }
 
+  loadTaskFromDB = (tasks = []) => {
+    tasks.map((item) => {
+      const task = new Task(item.desc);
+      this._listado[task.id] = task;
+    });
+  };
+
   createTask(desc = "") {
     const task = new Task(desc);
 
