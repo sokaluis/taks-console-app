@@ -1,3 +1,4 @@
+require("colors");
 const Task = require("./task");
 
 class Tasks {
@@ -30,6 +31,18 @@ class Tasks {
     const task = new Task(desc);
 
     this._listado[task.id] = task;
+  }
+
+  completeTaskList() {
+    const completeList = this.listadoArr;
+    console.log("\n");
+    completeList.map((item, index) => {
+      const idx = `${index + 1}`.green;
+      const { desc, completedIn } = item;
+      const status = completedIn ? "Completed".green : "Pending".red;
+
+      console.log(`${idx}. ${desc} :: ${status}`);
+    });
   }
 }
 

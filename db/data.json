@@ -1,17 +1,37 @@
 [
    {
-      "id": "e8d3a817-f1d3-43fa-a81c-901281357b89",
-      "desc": "Recolectar las piedras del infinito",
+      "id": "ef3bb676-e6b5-4804-a451-56681e3ae5ac",
+      "desc": "Recolectar pidras del infinito",
       "completedIn": null
    },
    {
-      "id": "dc552b0e-b46e-43b9-89f8-aeb4348d8d26",
-      "desc": "hola",
+      "id": "7907b371-b682-40dd-8d5b-733f0e5dad05",
+      "desc": "Alma",
       "completedIn": null
    },
    {
-      "id": "64936e3b-3c67-4cd8-8ba6-98870772f9d6",
-      "desc": "que tal",
+      "id": "cfadb4b8-7b3b-4ecb-909b-7cc9d85ad5e2",
+      "desc": "Poder",
+      "completedIn": null
+   },
+   {
+      "id": "4893d84a-05d2-489b-a379-968a53478036",
+      "desc": "Realidad",
+      "completedIn": null
+   },
+   {
+      "id": "57b70b98-d901-4c8b-b072-9683be166d20",
+      "desc": "Tiempo",
+      "completedIn": null
+   },
+   {
+      "id": "66e24bad-bccc-412d-9ef7-065c044d9d1c",
+      "desc": "Mente",
+      "completedIn": null
+   },
+   {
+      "id": "92c16187-6137-49ef-be21-35a6e21f1899",
+      "desc": "Espacio",
       "completedIn": null
    }
 ]
