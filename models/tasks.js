@@ -22,14 +22,12 @@ class Tasks {
 
   loadTaskFromDB = (tasks = []) => {
     tasks.map((item) => {
-      const task = new Task(item.desc);
-      this._listado[task.id] = task;
+      this._listado[item.id] = item;
     });
   };
 
   createTask(desc = "") {
     const task = new Task(desc);
-
     this._listado[task.id] = task;
   }
 
@@ -56,7 +54,9 @@ class Tasks {
       if (completed) {
         if (completedIn) {
           counter += 1;
-          console.log(`${counter.toString().green}. ${desc} :: ${status}`);
+          console.log(
+            `${counter.toString().green}. ${desc} :: ${completedIn.green}`
+          );
         }
       } else {
         if (!completedIn) {
@@ -71,6 +71,22 @@ class Tasks {
     if (this._listado[id]) {
       delete this._listado[id];
     }
+  }
+
+  toggleCompleted(ids = []) {
+    ids.forEach((id) => {
+      const tarea = this._listado[id];
+
+      if (!tarea.completedIn) {
+        tarea.completedIn = new Date().toISOString();
+      }
+    });
+
+    this.listadoArr.forEach((task) => {
+      if (!ids.includes(task.id)) {
+        this._listado[task.id].completedIn = null;
+      }
+    });
   }
 }
 

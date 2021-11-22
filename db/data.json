@@ -1,36 +1,36 @@
 [
    {
-      "id": "7173b0fb-7b0c-49c9-8e2d-5d15f3464002",
+      "id": "be5f4116-5807-4542-a55c-3b0f378628d9",
       "desc": "Recolectar pidras del infinito",
       "completedIn": null
    },
    {
-      "id": "6e156318-4a0d-4f3a-a916-e20ab454c269",
+      "id": "290ec839-8ced-4274-94d6-ce477f2c774b",
       "desc": "Alma",
       "completedIn": null
    },
    {
-      "id": "3ef005a8-f3f5-4449-b83f-4592cce1b45e",
+      "id": "e0aefb0d-2208-492d-86d8-97c56e894980",
       "desc": "Poder",
-      "completedIn": null
+      "completedIn": "2021-11-22T16:32:31.543Z"
    },
    {
-      "id": "468abf4d-4d73-47a6-9710-bf9e55e14818",
+      "id": "1ebcbcff-5fea-4a91-8384-bf77f3075931",
       "desc": "Realidad",
-      "completedIn": null
+      "completedIn": "2021-11-22T16:32:31.543Z"
    },
    {
-      "id": "f705bf9d-118a-40ee-bc3f-f9fb074b5765",
+      "id": "a05835d4-8d5c-407c-8121-771dd8d2e575",
       "desc": "Tiempo",
       "completedIn": null
    },
    {
-      "id": "a606ef12-1334-47af-91c6-be6552aec070",
+      "id": "8f1fe34b-8e62-4c0c-b1d7-197821261267",
       "desc": "Mente",
       "completedIn": null
    },
    {
-      "id": "f5bc9b2a-36fc-4cf8-b594-20e47891b514",
+      "id": "8cc2262f-c8ab-4ee9-a1bd-2a78e64b2423",
       "desc": "Espacio",
       "completedIn": null
    }
