@@ -23,11 +23,13 @@ const main = async () => {
         tasks.createTask(desc);
         break;
       case "2":
-        tasks.completeTaskList();
+        tasks.taskList();
         break;
       case "3":
+        tasks.taskListByStatus(true);
         break;
       case "4":
+        tasks.taskListByStatus(false);
         break;
       case "5":
         break;

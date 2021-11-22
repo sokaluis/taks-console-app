@@ -33,7 +33,7 @@ class Tasks {
     this._listado[task.id] = task;
   }
 
-  completeTaskList() {
+  taskList() {
     const completeList = this.listadoArr;
     console.log("\n");
     completeList.map((item, index) => {
@@ -42,6 +42,28 @@ class Tasks {
       const status = completedIn ? "Completed".green : "Pending".red;
 
       console.log(`${idx}. ${desc} :: ${status}`);
+    });
+  }
+
+  taskListByStatus(completed = true) {
+    const completeList = this.listadoArr;
+    let counter = 0;
+    console.log("\n");
+    completeList.map((item) => {
+      const { desc, completedIn } = item;
+      const status = completedIn ? "Completed".green : "Pending".red;
+
+      if (completed) {
+        if (completedIn) {
+          counter += 1;
+          console.log(`${counter.toString().green}. ${desc} :: ${status}`);
+        }
+      } else {
+        if (!completedIn) {
+          counter += 1;
+          console.log(`${counter.toString().green}. ${desc} :: ${status}`);
+        }
+      }
     });
   }
 }
