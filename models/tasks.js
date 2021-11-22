@@ -66,6 +66,12 @@ class Tasks {
       }
     });
   }
+
+  deleteTask(id = "") {
+    if (this._listado[id]) {
+      delete this._listado[id];
+    }
+  }
 }
 
 module.exports = Tasks;

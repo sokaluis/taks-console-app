@@ -86,8 +86,51 @@ const readInput = async (message) => {
   return desc;
 };
 
+const deleteTaskFromList = async (tasks = []) => {
+  const choices = tasks.map((tarea, i) => {
+    const idx = `${i + 1}`.green;
+
+    return {
+      value: tarea.id,
+      name: `${idx}. ${tarea.desc}`,
+    };
+  });
+
+  choices.unshift({
+    value: "0",
+    name: "0".green + "Cancelar",
+  });
+
+  const questions = [
+    {
+      type: "list",
+      name: "id",
+      message: "Borrar",
+      choices,
+    },
+  ];
+
+  const { id } = await inquirer.prompt(questions);
+  return id;
+};
+
+const confirmAction = async (message = "") => {
+  const question = [
+    {
+      type: "confirm",
+      name: "ok",
+      message,
+    },
+  ];
+
+  const { ok } = await inquirer.prompt(question);
+  return ok;
+};
+
 module.exports = {
   inquirerMenu,
   pauseMenu,
   readInput,
+  deleteTaskFromList,
+  confirmAction,
 };
